@@ -1,0 +1,50 @@
+/*
+ID:190104027
+Group:A2
+Online:Online 1
+Date=29/11/22
+*/
+
+#include<stdio.h>
+int main(){
+
+FILE  *ptr1,*ptr2;
+char c;
+int line=1;
+int i=0;
+
+ptr1=fopen("Demo.txt","r");
+ptr2=fopen("Output.txt","w");
+
+if(ptr1==NULL){
+    printf("File is not  exists \n");
+}
+else{
+	fputc(line,ptr2);
+    while((c=fgetc(ptr1))!=EOF){
+            fputc(c,ptr2);
+        if(c=='\n'){
+            line++;
+            fprintf(ptr2,"%d",line);
+            fputc(':' ,ptr2);
+
+        }
+    }
+}
+fclose(ptr1);
+fclose(ptr2);
+
+printf("Last line number is %d",line);
+
+ptr2=fopen("Output.txt","w");
+//fputc(line,ptr2);
+char str[100]="Last Line Number :";
+
+for(i=0;i<=20;i++){
+  fprintf(ptr2,"%c",str[i]);
+}
+fprintf(ptr2,"%d",line);
+fclose(ptr2);
+return 0;
+
+}

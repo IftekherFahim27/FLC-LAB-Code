@@ -1,0 +1,21 @@
+  )  )  ) 
+2  (  (  ( 
+3 for (   ;   ;   ) 
+4 float x1  =  3.125 ;  ;  ; 
+5 
+6 double x1 ; 
+7 a ; 
+8 double f1 ( float a ,  int int x ) 
+9 {if ( x < x1 ) 
+10 double z ;  ; 
+11 a ; 
+12 else z  =  0.01 ; }}
+13 else return z ; 
+14 }
+15 
+16 int main ( void ) 
+17 {{{{
+18 int n1 ;  double z ; 
+19 n1 = 25 ;  z = f1 ( n1 )  ; }
+20 a ; 
+21 
